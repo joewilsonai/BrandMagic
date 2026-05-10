@@ -1,20 +1,32 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# BrandMagic
 
-# Run and deploy your AI Studio app
+**Turn your boring content into branded assets.**
 
-This contains everything you need to run your app locally.
+A lightweight AI app that takes raw content — a blog post, a screenshot, a quote, a clip — and rewraps it in your brand: fonts, colors, layout, voice. Ready to share in seconds.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1O_SpBo0VIZHuigJVUK1qBAHtn1yJIRjH
+## What it does
 
-## Run Locally
+- **Drop in raw content** — text, image, or URL
+- **Pick a brand kit** — color palette, font pairing, tone of voice
+- **Get back a branded asset** — social card, blog header, quote graphic, or share image
 
-**Prerequisites:**  Node.js
+## Stack
 
+- **React** + **TypeScript** + **Vite**
+- **Google Gemini** for content + brand transformation
+- Single-page app, no backend
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Run locally
+
+```bash
+git clone https://github.com/joewilsonai/BrandMagic
+cd BrandMagic
+npm install
+# Add your Gemini API key to .env.local:
+#   GEMINI_API_KEY=your_key_here
+npm run dev
+```
+
+## License
+
+MIT
